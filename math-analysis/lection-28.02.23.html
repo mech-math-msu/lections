@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-01-01" />
+  <meta name="keywords" content="что это вас тут так много, так, это
+очевидно и это тоже, мне лень писать, сами докажите, полчаса до конца
+лекции я что-то вас задерживаю, лучший, математичекий
+анализ, матан, экзамен, матаааан, лекции, мгу, мехмат, тех, техать, 1
+курс" />
+  <title>Математический анализ</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+<!--<link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js"></script>-->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Математический анализ</h1>
+<p class="date">2023</p>
+</header>
+<details>
+<summary>Содержание</summary>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#интеграл-с-переменным-верхним-пределом"
+id="toc-интеграл-с-переменным-верхним-пределом">Интеграл с переменным
+верхним пределом</a>
+<ul>
+<li><a href="#формула-ньютона-лейбница"
+id="toc-формула-ньютона-лейбница">Формула Ньютона-Лейбница</a></li>
+</ul></li>
+<li><a
+href="#интегрирование-по-частям-и-замена-переменной-для-определенного-интеграла"
+id="toc-интегрирование-по-частям-и-замена-переменной-для-определенного-интеграла">Интегрирование
+по частям и замена переменной для определенного интеграла</a></li>
+</ul>
+</nav>
+</details>
+<h2 id="интеграл-с-переменным-верхним-пределом">Интеграл с переменным
+верхним пределом</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-0"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b]\)</span>. Тогда <span
+class="math inline">\(F(x) = \displaystyle\int\limits_a^x
+f(t)dt\)</span> непрерывна на отрезке <span class="math inline">\([a,
+b]\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(f(x) \in R[a, b]
+\Rightarrow \exists c &gt; 0: \,\,\,\, |f(x)| &lt; c \,\,\,\, \forall x
+\in [a, b]\)</span>. <span class="math inline">\(|F(x + \Delta) - F(x)|
+= \left|\displaystyle\int\limits_a^{x + \Delta x} f(t)dt -
+\displaystyle\int\limits_a^{x} f(t)dt\right|=\)</span> <span
+class="math inline">\(= \left|\displaystyle\int\limits_{x}^{x + \Delta
+x} f(t)dt\right| \le \left|\displaystyle\int\limits_{x}^{x + \Delta x}
+|f(t)|dt \right| \le |\Delta x|c \,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b]\)</span>, <span
+class="math inline">\(f(x)\)</span> непрерывна в точке <span
+class="math inline">\(x_0 \in [a, b]\)</span>. Тогда <span
+class="math inline">\(F(x) = \displaystyle\int\limits_a^x
+f(t)dt\)</span> дифференцируема в точке <span
+class="math inline">\(x_0\)</span> и <span class="math inline">\(F’(x_0)
+= f(x_0)\)</span>.</p>
+<p><em>Доказательство:</em> <span class="math inline">\(\forall
+\varepsilon &gt; 0 \,\,\,\, \exists \delta &gt; 0: \,\,\,\, \forall t: 0
+&lt; |t - x_0| &lt; \delta \,\,\,\, |f(t) - f(x_0)| &lt;
+\varepsilon\)</span>. <span class="math inline">\(\left|\frac{1}{\Delta
+x}(F(x + \Delta x) - F(x)) - f(x_0)\right| = \left|\frac{1}{\Delta
+x}\left(\displaystyle\int\limits_a^{x + \Delta x} f(t)dt -
+\displaystyle\int\limits_a^{x} f(t)dt\right) -
+f(x_0)\right|=\)</span></p>
+<p><span class="math inline">\(= \left|\frac{1}{\Delta
+x}\displaystyle\int\limits_x^{x + \Delta x} f(t)dt - \frac{1}{\Delta
+x}\displaystyle\int\limits_x^{x + \Delta x} f(x_0)dt\right| =
+\left|\frac{1}{\Delta x}\displaystyle\int\limits_x^{x + \Delta x} (f(t)
+- f(x_0))dt\right|\le\)</span></p>
+<p><span class="math inline">\(\le \left|\frac{1}{\Delta
+x}\right|\left|\displaystyle\int\limits_x^{x + \Delta x} |f(t) -
+f(x_0)|dt\right| \le \varepsilon \left|\frac{1}{\Delta
+x}\right|\left|\Delta x\right| = \varepsilon
+\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Следствие:</strong><a name="corollary-0"></a> Пусть <span
+class="math inline">\(f(x) \in R[a, b]\)</span> и <span
+class="math inline">\(f(x) \in C(a, b)\)</span>. Тогда <span
+class="math inline">\(F(x) = \displaystyle\int\limits_a^x
+f(t)dt\)</span> - первообразная <span
+class="math inline">\(f(x)\)</span> на <span class="math inline">\((a,
+b)\)</span> и <span class="math inline">\(F(x) \in C[a, b]\)</span>.</p>
+<h3 id="формула-ньютона-лейбница">Формула Ньютона-Лейбница</h3>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-2"></a> (формула
+Ньютона-Лейбница) Пусть <span class="math inline">\(f(x) \in R[a,
+b]\)</span>, <span class="math inline">\(\Phi(x)\)</span> -
+первообразная <span class="math inline">\(f(x)\)</span> на <span
+class="math inline">\((a, b)\)</span>. Тогда <span
+class="math display">\[\displaystyle\int\limits_a^b f(x)dx = \Phi(b) -
+\Phi(a)\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math inline">\(\displaystyle\int\limits_a^x f(t)dt = \Phi(x) +
+C\)</span>, так как <a
+href="https://mech-math-msu.github.io/lections/math-analysis/lection-1-07.02.23#theorem-0">один</a>
+и <a href="#corollary-0">два</a>. Подставим <span
+class="math inline">\(x = a \Rightarrow C = -\Phi(a) \Rightarrow
+\displaystyle\int\limits_a^x f(t)dt = \Phi(x) - \Phi(a)\)</span>,
+подставляя <span class="math inline">\(x = b\)</span>, получаем
+требуемое равенство <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><strong>Теорема:</strong><a name="theorem-3"></a> (обобщение формулы
+Ньютона-Лейбница) Пусть <span class="math inline">\(f(x) \in R[a,
+b]\)</span> и <span class="math inline">\(f(x) \in C([a, b] \setminus
+\{x_i\}_{i = 1}^n)\)</span>, <span class="math inline">\(\Phi(x) \in
+C^([a, b])\)</span>, <span class="math inline">\(\Phi’(x) = f(x)
+\,\,\,\, \forall x \in [a, b] \setminus \{x_i\}_{i = 1}^n\)</span>.
+Тогда <span class="math display">\[\displaystyle\int\limits_a^b f(x)dx =
+\Phi(b) - \Phi(a)\]</span></p>
+<p><em>Доказательство:</em> Пусть <span class="math inline">\(x_0 = a,
+\,\,\,\, x_{n + 1} = b\)</span>. Тогда <span
+class="math inline">\(\displaystyle\int\limits_a^b f(x)dx =
+\displaystyle \sum_{i = 0}^{n}\displaystyle\int\limits_{x_i}^{x_{i + 1}}
+f(x)dx = \displaystyle \sum_{i = 0}^{n} \Phi(x_{i + 1}) - \Phi(x_{i}) =
+\Phi(b) - \Phi(a) \,\,\,\,\blacksquare\)</span></p>
+<h2
+id="интегрирование-по-частям-и-замена-переменной-для-определенного-интеграла">Интегрирование
+по частям и замена переменной для определенного интеграла</h2>
+<hr />
+<p><strong>Теорема:</strong><a name="theorem-4"></a> (замена переменной
+при интегрировании определенного интеграла) Пусть <span
+class="math inline">\(f(x) \in R[a, b], \,\,\,\, \varphi(t) \in
+C^{1}[\alpha, \beta]\)</span>(<span
+class="math inline">\(\varphi(x)\)</span> непрерывна, и ее производная
+непрерывна), <span class="math inline">\(\varphi([\alpha, \beta])
+\subset [a, b], \,\,\,\,\varphi(\alpha) = a, \,\,\,\, \varphi(\beta) =
+b\)</span>. Тогда <span
+class="math display">\[\displaystyle\int\limits_a^b f(x)dx =
+\displaystyle\int\limits_{\alpha}^{\beta}
+f(\varphi(t))\varphi’(t)dt\]</span></p>
+<p><em>Доказательство:</em> Пусть <span
+class="math inline">\(\Phi(x)\)</span> - первообразная <span
+class="math inline">\(f(x)\)</span> на <span class="math inline">\((a,
+b) \Rightarrow \Phi(\varphi(t))\)</span> - первообразная для <span
+class="math inline">\(f(\varphi(t))\varphi’(t)\)</span>. <span
+class="math display">\[\displaystyle\int\limits_{\alpha}^{\beta}
+f(\varphi(t))\varphi’(t) = \Phi(\varphi(\beta)) - \Phi(\varphi(\alpha))
+= \displaystyle\int\limits_a^b f(x)dx \,\,\,\,\blacksquare\]</span></p>
+<p><strong>Теорема:</strong><a name="theorem-5"></a> (интегрирование по
+частям определенного интеграла) Пусть <span class="math inline">\(f(x),
+g(x) \in R[a, b]\)</span>. Тогда <span
+class="math display">\[\displaystyle\int\limits_a^b f(x)g’(x)dx =
+\left.f(x)g(x)\right\rvert_{a}^{b} - \displaystyle\int\limits_a^b
+f’(x)g(x)dx\]</span></p>
+<p><em>Доказательство:</em> <span
+class="math display">\[\left.f(x)g(x)\right\rvert_{a}^{b} =
+\displaystyle\int\limits_a^b \left(f(x)g(x)\right)’dx
+\,\,\,\,\blacksquare\]</span></p>
+</body>
+</html>
