@@ -103,7 +103,48 @@ $$= \left(\begin{array}{c|ccc}
 
 ---
 
-что-то максимально неприятное
+**Теорема:**<a name="theorem-1"></a> (Теорема Гамильтона-Кэли) Пусть $\mathcal{A}$ линейный оператор на векторном пространстве $V$ размерности $n$ над полем $F$. Тогда $A$ является корнем своего характеристического многочлена.
 
+*Доказательство:* 
+
+1. Пусть $F$ - алгебраически замкнуто. Тогда в $V$ существует базис, в котором матрица линейного оператора $A$ является верхнетреугольной. 
+$$A = \left(\begin{array}{cccc}
+a_{11} & \star & \dots & \star\\
+0 & a_{22} & \dots & \star\\
+\vdots & \ddots & \ddots & \vdots\\
+0 & \dots & 0 & a_{nn}
+\end{array}\right)$$
+$$\chi_{\mathcal{A}}(t) = \det (A - tE) = (a_{11} - t)\cdot \ldots \cdot (a_{nn} - t)$$
+$$\chi_{\mathcal{A}}(A) = (-1)^n(A - a_{11}E)\cdot \ldots \cdot (A - a_{nn}E)=$$
+$$= \left(\begin{array}{c|ccc}
+0 & \star & \dots & \star\\
+\hline
+0\\
+\vdots & C - a_{11}E\\
+0\\
+\end{array}\right)\cdot\ldots\cdot\left(\begin{array}{c|ccc}
+a_{11} - a_{nn} & \star & \dots & \star\\
+\hline
+0\\
+\vdots & C - a_{nn}E\\
+0\\
+\end{array}\right)=$$
+$(C - a_{22}E)\cdot\ldots\cdot(C - a_{nn}E) = 0$ по предположению индукции (многочлен степени $n - 1$).
+
+$$=\left(\begin{array}{c|ccc}
+0 & \star & \dots & \star\\
+\hline
+0\\
+\vdots & \,\,\,\, & C - a_{11}E\\
+0\\
+\end{array}\right)\cdot\left(\begin{array}{c|ccc}
+\displaystyle \prod_{i = 2}^{n}(a_{11} - a_{ii}) & \star & \dots & \star\\
+\hline
+0\\
+\vdots & \,\,\,\, & 0\\
+0\\
+\end{array}\right) = \left(0\right)$$
+
+2. Пусть поле $F$ алгебраически не замкнуто. Тогда по теореме, которая будет доказана в неопределенном будущем у $F$ является подполем некоторого алгебраически замкнутого поля $F’$. $\,\,\,\,\blacksquare$
 
 

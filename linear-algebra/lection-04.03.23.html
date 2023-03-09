@@ -362,6 +362,68 @@ class="math inline">\(C = \left(\begin{array}{c|ccc} 1 &amp; 0 &amp;
 \end{array}\right) \,\,\,\,\blacksquare\]</span></p>
 <h2 id="теорема-гамильтона-кэли">Теорема Гамильтона-Кэли</h2>
 <hr />
-<p>что-то максимально неприятное</p>
+<p><strong>Теорема:</strong><a name="theorem-1"></a> (Теорема
+Гамильтона-Кэли) Пусть <span class="math inline">\(\mathcal{A}\)</span>
+линейный оператор на векторном пространстве <span
+class="math inline">\(V\)</span> размерности <span
+class="math inline">\(n\)</span> над полем <span
+class="math inline">\(F\)</span>. Тогда <span
+class="math inline">\(A\)</span> является корнем своего
+характеристического многочлена.</p>
+<p><em>Доказательство:</em></p>
+<ol type="1">
+<li>Пусть <span class="math inline">\(F\)</span> - алгебраически
+замкнуто. Тогда в <span class="math inline">\(V\)</span> существует
+базис, в котором матрица линейного оператора <span
+class="math inline">\(A\)</span> является верхнетреугольной. <span
+class="math display">\[A = \left(\begin{array}{cccc}
+a_{11} &amp; \star &amp; \dots &amp; \star\\
+0 &amp; a_{22} &amp; \dots &amp; \star\\
+\vdots &amp; \ddots &amp; \ddots &amp; \vdots\\
+0 &amp; \dots &amp; 0 &amp; a_{nn}
+\end{array}\right)\]</span> <span
+class="math display">\[\chi_{\mathcal{A}}(t) = \det (A - tE) = (a_{11} -
+t)\cdot \ldots \cdot (a_{nn} - t)\]</span> <span
+class="math display">\[\chi_{\mathcal{A}}(A) = (-1)^n(A - a_{11}E)\cdot
+\ldots \cdot (A - a_{nn}E)=\]</span> <span class="math display">\[=
+\left(\begin{array}{c|ccc}
+0 &amp; \star &amp; \dots &amp; \star\\
+\hline
+0\\
+\vdots &amp; C - a_{11}E\\
+0\\
+\end{array}\right)\cdot\ldots\cdot\left(\begin{array}{c|ccc}
+a_{11} - a_{nn} &amp; \star &amp; \dots &amp; \star\\
+\hline
+0\\
+\vdots &amp; C - a_{nn}E\\
+0\\
+\end{array}\right)=\]</span> <span class="math inline">\((C -
+a_{22}E)\cdot\ldots\cdot(C - a_{nn}E) = 0\)</span> по предположению
+индукции (многочлен степени <span class="math inline">\(n -
+1\)</span>).</li>
+</ol>
+<p><span class="math display">\[=\left(\begin{array}{c|ccc}
+0 &amp; \star &amp; \dots &amp; \star\\
+\hline
+0\\
+\vdots &amp; \,\,\,\, &amp; C - a_{11}E\\
+0\\
+\end{array}\right)\cdot\left(\begin{array}{c|ccc}
+\displaystyle \prod_{i = 2}^{n}(a_{11} - a_{ii}) &amp; \star &amp; \dots
+&amp; \star\\
+\hline
+0\\
+\vdots &amp; \,\,\,\, &amp; 0\\
+0\\
+\end{array}\right) = \left(0\right)\]</span></p>
+<ol start="2" type="1">
+<li>Пусть поле <span class="math inline">\(F\)</span> алгебраически не
+замкнуто. Тогда по теореме, которая будет доказана в неопределенном
+будущем у <span class="math inline">\(F\)</span> является подполем
+некоторого алгебраически замкнутого поля <span
+class="math inline">\(F’\)</span>. <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></li>
+</ol>
 </body>
 </html>
