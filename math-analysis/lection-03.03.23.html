@@ -271,5 +271,56 @@ class="math inline">\(\gamma(t) \in C^1[a, b]\)</span>. Тогда <span
 class="math inline">\(\gamma\)</span> - спрямляемая и <span
 class="math display">\[|\gamma| = \displaystyle\int\limits_a^b
 \sqrt{\displaystyle \sum_{i = 1}^{n} x_i’^2(t)} dt\]</span></p>
+<p><em>Доказательство:</em> Докажем, что <span
+class="math inline">\(\gamma\)</span> спрямляемая, то есть <span
+class="math inline">\(\{|l_{\gamma}(\mathcal{T})|\}_{\mathcal{T}}\)</span>
+ограничено сверху. <span class="math display">\[|l_{\gamma}(t)| =
+\displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i =
+1}^{n}(x_i(t_j) - x_i(t_{j - 1}))^2} =\]</span> <span
+class="math display">\[=\displaystyle \sum_{j = 1}^{m}
+\sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij}) (t_j - t_{j -
+1})^2} = \displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i =
+1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}|\le\]</span> <span
+class="math display">\[\le M \sqrt{n} (b - a)\]</span> Следовательно,
+<span class="math inline">\(\gamma\)</span> спрямляемая.</p>
+<p><strong>Лемма:</strong><a name="lemma-1"></a> <span
+class="math display">\[\sqrt{\displaystyle \sum_{i = 1}^{n}x_i^2} -
+\sqrt{\displaystyle \sum_{i = 1}^{n}y_i^2} \le \displaystyle \sum_{i =
+1}^{n}|x_i - y_i|\]</span></p>
+<p><em>Доказательство:</em> домножить на сопряженное и поколдовать <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
+<p><span class="math inline">\(f(t) = \sqrt{\displaystyle \sum_{i =
+1}^{n} x_i’^2(t)}\)</span> - композиция суммы непрерывных функций
+непрерывна, а следовательно <span class="math display">\[\exists
+\displaystyle\int\limits_a^b \sqrt{\displaystyle \sum_{i = 1}^{n}
+x_i’^2(t)} dt = I\]</span></p>
+<ol type="1">
+<li><span class="math display">\[\forall \varepsilon &gt; 0 \,\,\,\,
+\exists \delta_1 &gt; 0: \,\,\,\, \forall \mathcal{T} (d(\mathcal{T})
+&lt; \delta_1) \,\,\,\, |\sigma_f(\mathcal{T}) - I| &lt;
+\varepsilon\]</span></li>
+<li><span class="math display">\[||l_{\gamma}(\mathcal{T})| -
+\sigma_f(\mathcal{T})| = \left|\displaystyle \sum_{j = 1}^{m}
+\sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}|
+- \sigma_f(\mathcal{T})\right|=\]</span> <span
+class="math display">\[=\left|\displaystyle \sum_{j = 1}^{m}
+\sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}|
+- \displaystyle \sum_{j = 1}^{m}\sqrt{\displaystyle \sum_{i = 1}^{n}
+x_i’^2(\xi_j)}|t_j - t_{j - 1}|\right| \le\]</span> <span
+class="math display">\[\le \left|\displaystyle \sum_{j = 1}^{m}
+\displaystyle \sum_{i = 1}^{n}|x_i’(\xi_{ij}) - x_i’(\xi_j)| |t_j - t_{j
+- 1}|\right|\]</span> <span class="math display">\[\forall \varepsilon
+&gt; 0 \,\,\,\, \exists \delta_2 &gt; 0: \,\,\,\, \forall \xi_{ij},
+\xi_j: \,\,\,\, |\xi_{ij} - \xi_j| &lt; \delta \,\,\,\, |x_i’(\xi_{ij})
+- x_i’(\xi_j)| &lt; \varepsilon \Rightarrow\]</span> <span
+class="math display">\[\forall \frac{\varepsilon}{n(b - a)} \,\,\,\,
+||l_{\gamma}(t)| - \sigma_f(\mathcal{T})| &lt; \varepsilon\]</span></li>
+<li><span class="math display">\[|\gamma| =
+\sup_{\mathcal{T}}\{|l_{\gamma}(\mathcal{T})|\} \Rightarrow |\gamma| -
+|l_{\gamma}(\mathcal{T})| &lt; \varepsilon\]</span></li>
+</ol>
+<p><span class="math display">\[\Downarrow\]</span></p>
+<p><span class="math display">\[|\gamma| - I &lt; \varepsilon
+\Rightarrow I = |\gamma| \,\,\,\,\blacksquare\]</span></p>
 </body>
 </html>

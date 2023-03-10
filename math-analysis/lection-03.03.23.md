@@ -46,3 +46,29 @@ $$|l_{\gamma}(\mathcal{T}_1)| \le |l_{\gamma}(\mathcal{T}_2)|$$
 
 **Теорема:**<a name="theorem-1"></a> Пусть $\gamma(t) \in C^1[a, b]$. Тогда $\gamma$ - спрямляемая и
 $$|\gamma| = \displaystyle\int\limits_a^b \sqrt{\displaystyle \sum_{i = 1}^{n} x_i’^2(t)} dt$$
+
+*Доказательство:* Докажем, что $\gamma$ спрямляемая, то есть $\{|l_{\gamma}(\mathcal{T})|\}_{\mathcal{T}}$ ограничено сверху.
+$$|l_{\gamma}(t)| = \displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i = 1}^{n}(x_i(t_j) - x_i(t_{j - 1}))^2} =$$
+$$=\displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij}) (t_j - t_{j - 1})^2} = \displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}|\le$$
+$$\le M \sqrt{n} (b - a)$$
+Следовательно, $\gamma$ спрямляемая.
+
+**Лемма:**<a name="lemma-1"></a> $$\sqrt{\displaystyle \sum_{i = 1}^{n}x_i^2} - \sqrt{\displaystyle \sum_{i = 1}^{n}y_i^2} \le \displaystyle \sum_{i = 1}^{n}|x_i - y_i|$$
+
+*Доказательство:* домножить на сопряженное и поколдовать $\,\,\,\,\blacksquare$
+
+$f(t) = \sqrt{\displaystyle \sum_{i = 1}^{n} x_i’^2(t)}$ - композиция суммы непрерывных функций непрерывна, а следовательно $$\exists \displaystyle\int\limits_a^b \sqrt{\displaystyle \sum_{i = 1}^{n} x_i’^2(t)} dt = I$$
+
+1. $$\forall \varepsilon > 0 \,\,\,\, \exists \delta_1 > 0: \,\,\,\, \forall \mathcal{T} (d(\mathcal{T}) < \delta_1) \,\,\,\, |\sigma_f(\mathcal{T}) - I| < \varepsilon$$
+2. $$||l_{\gamma}(\mathcal{T})| - \sigma_f(\mathcal{T})| = \left|\displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}| - \sigma_f(\mathcal{T})\right|=$$
+$$=\left|\displaystyle \sum_{j = 1}^{m} \sqrt{\displaystyle \sum_{i = 1}^{n}x_i’^2(\xi_{ij})} |t_j - t_{j - 1}| - \displaystyle \sum_{j = 1}^{m}\sqrt{\displaystyle \sum_{i = 1}^{n} x_i’^2(\xi_j)}|t_j - t_{j - 1}|\right| \le$$
+$$\le \left|\displaystyle \sum_{j = 1}^{m} \displaystyle \sum_{i = 1}^{n}|x_i’(\xi_{ij}) - x_i’(\xi_j)| |t_j - t_{j - 1}|\right|$$ 
+$$\forall \varepsilon > 0 \,\,\,\, \exists \delta_2 > 0: \,\,\,\, \forall \xi_{ij}, \xi_j: \,\,\,\, |\xi_{ij} - \xi_j| < \delta \,\,\,\, |x_i’(\xi_{ij}) - x_i’(\xi_j)| < \varepsilon \Rightarrow$$
+$$\forall \frac{\varepsilon}{n(b - a)} \,\,\,\, ||l_{\gamma}(t)| - \sigma_f(\mathcal{T})| < \varepsilon$$
+3. $$|\gamma| = \sup_{\mathcal{T}}\{|l_{\gamma}(\mathcal{T})|\} \Rightarrow |\gamma| - |l_{\gamma}(\mathcal{T})| < \varepsilon$$
+
+$$\Downarrow$$
+
+$$|\gamma| - I < \varepsilon \Rightarrow I = |\gamma| \,\,\,\,\blacksquare$$
+
+
