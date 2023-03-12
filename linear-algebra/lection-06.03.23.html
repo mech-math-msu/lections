@@ -344,13 +344,34 @@ m,\,\,\,\, \lambda = \alpha, k \ge m\\  0,\,\,\,\, \lambda = \alpha, k
 <p><em>Доказательство:</em> все кроме <span
 class="math inline">\(3\)</span> очевидно <span
 class="math inline">\(\,\,\,\,\blacksquare\)</span> 3.</p>
-<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть матрица
-линейного оператора <span class="math inline">\(\mathcal{A}\)</span> в
-некотором имеет жорданову нормальную форму. Тогда <span
+<p><strong>Утверждение:</strong><a name="statement-3"></a> Пусть <span
+class="math inline">\(V\)</span> - векторное пространство размерности
+<span class="math inline">\(n\)</span>. Пусть матрица линейного
+оператора <span class="math inline">\(\mathcal{A}\)</span> в некотором
+базисе имеет жорданову нормальную форму <span
+class="math inline">\(\operatorname{J}_n\)</span>. Тогда <span
 class="math inline">\(\dim V_{\lambda}\)</span> равно количеству
 жордановых клеток в матрице <span
 class="math inline">\(\mathcal{A}\)</span> с <span
 class="math inline">\(\lambda\)</span> на диагонали.</p>
-<p><em>Доказательство:</em></p>
+<p><em>Доказательство:</em> <span class="math inline">\(V_{\lambda} =
+\{v \in V: \,\,\,\, \mathcal{A}(v) = \lambda v\}\)</span>, а это
+множество решений <span class="math inline">\(\mathcal{A} - \lambda
+\mathcal{I} = 0\)</span> или <span
+class="math inline">\(\operatorname{J}_n - \lambda E = 0\)</span>.
+Следовательно, <span class="math inline">\(\dim V_{\lambda} = n -
+\operatorname{rk}\operatorname{J}_n\)</span>. Ранг жордановой матрицы -
+это сумма рангов составляющих ее клеток <span
+class="math inline">\(J_{k_1}(\lambda_1), \ldots,
+J_{k_s}(\lambda_s)\)</span>, а ранг жордановой клетки <span
+class="math inline">\(\operatorname{J}_k(\lambda) = \begin{cases}  k,
+\lambda \ne 0\\  k - 1, \lambda = 0 \end{cases}\)</span>. То есть <span
+class="math inline">\(n - \operatorname{rk}\operatorname{J}_n =
+\displaystyle \sum_{i = 1}^{s}k_i - \displaystyle \sum_{i =
+1}^{s}\operatorname{rk}J_{k_i}(\lambda_i)\)</span> значение этого
+выражения равно <span class="math inline">\(1\)</span> на всех клетках с
+<span class="math inline">\(\lambda\)</span> на диагонали и <span
+class="math inline">\(0\)</span> на остальных <span
+class="math inline">\(\,\,\,\,\blacksquare\)</span></p>
 </body>
 </html>

@@ -77,7 +77,10 @@ $$\mathcal{I}$$
 *Доказательство:* все кроме $3$ очевидно $\,\,\,\,\blacksquare$
 3. 
 
-**Утверждение:**<a name="statement-3"></a> Пусть матрица линейного оператора $\mathcal{A}$ в некотором имеет жорданову нормальную форму. Тогда $\dim V_{\lambda}$ равно количеству жордановых клеток в матрице $\mathcal{A}$ с $\lambda$ на диагонали.
+**Утверждение:**<a name="statement-3"></a> Пусть $V$ - векторное пространство размерности $n$. Пусть матрица линейного оператора $\mathcal{A}$ в некотором базисе имеет жорданову нормальную форму $\operatorname{J}_n$. Тогда $\dim V_{\lambda}$ равно количеству жордановых клеток в матрице $\mathcal{A}$ с $\lambda$ на диагонали.
 
-*Доказательство:*
+*Доказательство:* $V_{\lambda} = \{v \in V: \,\,\,\, \mathcal{A}(v) = \lambda v\}$, а это множество решений $\mathcal{A} - \lambda \mathcal{I} = 0$ или $\operatorname{J}_n - \lambda E = 0$. Следовательно, $\dim V_{\lambda} = n - \operatorname{rk}\operatorname{J}_n$. Ранг жордановой матрицы - это сумма рангов составляющих ее клеток $J_{k_1}(\lambda_1), \ldots, J_{k_s}(\lambda_s)$, а ранг жордановой клетки $\operatorname{J}_k(\lambda) = \begin{cases}
+    k, \lambda \ne 0\\
+    k - 1, \lambda = 0
+\end{cases}$. То есть $n - \operatorname{rk}\operatorname{J}_n = \displaystyle \sum_{i = 1}^{s}k_i - \displaystyle \sum_{i = 1}^{s}\operatorname{rk}J_{k_i}(\lambda_i)$ значение этого выражения равно $1$ на всех клетках с $\lambda$ на диагонали и $0$ на остальных $\,\,\,\,\blacksquare$
 
